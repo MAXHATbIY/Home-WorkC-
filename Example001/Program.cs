@@ -9,10 +9,15 @@ string userInput2 = Console.ReadLine() ?? "";
 int number1 = int.Parse(userInput1);
 int number2 = int.Parse(userInput2);
 
-int max = number1;
-
-if (number1 > max) max = number1;
-if (number2 > max) max = number2;
-
-Console.Write("max = ");
-Console.WriteLine(max);
+if(number1 > number2)
+{
+    Console.WriteLine($"max = {number1}");
+}
+else if (number1 < number2)
+{
+    Console.WriteLine($"max = {number2}");
+}
+else
+{
+    Console.WriteLine($"Число {number1} равно числу {number2}");
+}
