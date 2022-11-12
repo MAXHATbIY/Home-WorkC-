@@ -2,8 +2,8 @@
 // и выдает, является ли число четным (делится ли на два без остатка).
 
 Console.Write("введите целое число: ");
-string userInput1 = Console.ReadLine() ?? "";
-int number = int.Parse(userInput1);
+string userInput = Console.ReadLine() ?? "";
+int number = int.Parse(userInput);
 
 if(number % 2 == 0)// %-Операция получение остатка от целочисленного деления двух чисел, 
 //если остаток от деления введенного числа на 2 будет равен 0 то число четное
