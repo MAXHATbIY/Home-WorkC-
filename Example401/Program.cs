@@ -3,8 +3,9 @@
 
 Console.Clear();
 
+int arraySize = new Random().Next(3, 15);
 // заполнение массива
-int[] array = GetArray(15, 100, 1000);
+int[] array = GetArray(arraySize, 100, 1000);
 Console.Write("[ ");
 Console.Write(String.Join(" ", array));
 Console.Write(" ]");
