@@ -21,7 +21,7 @@ double[,] GetArray(int m, int n, double minValue, double maxValue)
        {
         var random = new Random();
         double rDouble = random.NextDouble();
-        result[i, j] = Math.Round(rDouble, 2);
+         result[i, j] = Math.Round((rDouble * (maxValue - minValue) + minValue), 2);// переводим сгенерированное число в заданный диапазон
        } 
     }
     return result;
